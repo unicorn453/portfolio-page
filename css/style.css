@@ -1,3 +1,8 @@
+:root {
+  --main: rgb(112, 186, 216);
+  --dark: black;
+  --font-color: rgb(24, 24, 58);
+}
 * {
   box-sizing: border-box;
 }
@@ -23,8 +28,9 @@ p {
   margin: 0;
 }
 .hero-banner {
-  background-image: url(../images/02-hero-bg.jpg);
-  height: 300px;
+  background-color: rgb(48, 48, 116);
+  background-image: url(/images/portfolio4.png);
+  height: 400px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -33,7 +39,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 20px 5%;
-  background-color: black;
+  background-color: var(--dark);
 }
 #navBar h1 {
   background-color: skyblue;
@@ -54,7 +60,7 @@ p {
 }
 .highlight {
   text-shadow: 1px 1px black;
-  color: skyblue;
+  color: var(--main);
   font-weight: 700;
 }
 
