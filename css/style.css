@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 5%;
+  background-color: black;
+}
+#navBar h1 {
+  background-color: skyblue;
+  font-size: 40px;
+  padding: 10px;
+  width: 30%;
+  font-weight: 600;
+}
+#navigation {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#navigation p {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.highlight {
+  text-shadow: 1px 1px black;
+  color: skyblue;
+  font-weight: 700;
+}
+
+.vertical {
+  border-left: 5px solid black;
+  height: 200px;
+  margin-left: 40%;
+}
+.page-section {
+  margin-left: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  position: absolute;
+}
