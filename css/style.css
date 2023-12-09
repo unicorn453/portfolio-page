@@ -30,7 +30,7 @@ p {
   margin-bottom: 30px;
   background-color: rgb(48, 48, 116);
   background-image: url(/images/portfolio4.png);
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -85,15 +85,24 @@ p {
   padding-right: 30px;
   padding-bottom: 800px;
 }
+.subtitle {
+  color: white;
+  text-align: center;
+}
 h2 {
   font-size: 30px;
 }
+p {
+  font-size: 19px;
+  padding: 10px;
+}
 .aboutme {
+  margin-right: 30px;
   padding-top: 80px;
   padding-left: 30px;
   border-right: 5px solid;
-  padding-right: 30px;
-  padding-bottom: 80px;
+  padding-right: 80px;
+  padding-bottom: 190px;
 }
 .contact {
   border-right: 5px solid;
@@ -154,8 +163,8 @@ h2 {
   display: grid;
   grid-template-rows: 400px 200px 200px;
   grid-template-columns:
-    300px 300px
-    300px 300px;
+    500px 500px
+    500px 500px;
   grid-template-areas:
     "desks desks"
     "couches patio"
@@ -188,9 +197,9 @@ h2 {
 
 .categoryGridArea {
   background-position: center;
-  background-image: cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 10px;
   cursor: pointer;
   display: grid;
   align-content: end;
