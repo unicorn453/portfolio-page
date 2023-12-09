@@ -23,11 +23,11 @@ h5,
 h6 {
   margin: 0;
 }
-
 p {
   margin: 0;
 }
 .hero-banner {
+  margin-bottom: 30px;
   background-color: rgb(48, 48, 116);
   background-image: url(/images/portfolio4.png);
   height: 400px;
@@ -63,18 +63,144 @@ p {
   color: var(--main);
   font-weight: 700;
 }
-
 .vertical {
   border-left: 5px solid black;
   height: 200px;
   margin-left: 40%;
 }
-.page-section {
-  margin-left: 30%;
+.vertical1 {
+  border-left: 5px solid black;
+  height: 900px;
+  margin-left: 40%;
+}
+#flex {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
-  align-items: end;
+}
+.one {
+  padding-left: 90px;
+  border-right: 5px solid;
+  padding-right: 30px;
+  padding-bottom: 800px;
+}
+h2 {
+  font-size: 30px;
+}
+.aboutme {
+  padding-top: 80px;
+  padding-left: 30px;
+  border-right: 5px solid;
+  padding-right: 30px;
+  padding-bottom: 80px;
+}
+.contact {
+  border-right: 5px solid;
+  padding-right: 20px;
+  padding-left: 15px;
+  padding-bottom: 80px;
+}
+
+/*.serv div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px;
+  position: relative;
+}
+
+.two,
+.three {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.four,
+.five {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+.one {
+  flex: 1 100vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100vw;
+}
+.two img,
+.three img,
+.four img,
+.five img {
+  height: 100px;
+  width: 250px;
+}
+.big {
   position: absolute;
+  top: -70px;
+  left: 20px;
+  height: 300px;
+  width: 500px;
+}
+*/
+
+.subHeading {
+  text-align: center;
+  border-bottom: 2px solid black;
+  width: 300px;
+  margin: 50px auto;
+}
+
+#categoryGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 400px 200px 200px;
+  grid-template-columns:
+    300px 300px
+    300px 300px;
+  grid-template-areas:
+    "desks desks"
+    "couches patio"
+    "bookcases bedroom";
+}
+
+#bookcases {
+  grid-area: bookcases;
+  background-image: url("/images/gallery.png");
+}
+#bedroom {
+  grid-area: bedroom;
+  background-image: url("/images/gallery.png");
+}
+
+#couches {
+  grid-area: couches;
+  background-image: url("/images/horiseon.png");
+}
+
+#patio {
+  grid-area: patio;
+  background-image: url("/images/gallery.png");
+}
+
+#desks {
+  grid-area: desks;
+  background-image: url("/images/lawfirm.png");
+}
+
+.categoryGridArea {
+  background-position: center;
+  background-image: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  height: 25px;
+  color: white;
+  font-size: 18px;
+  border-bottom: 5px solid #ff6200;
 }
