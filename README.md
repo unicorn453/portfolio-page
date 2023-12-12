@@ -4,7 +4,7 @@
 
 A portfolio website showcasing a person's work through an about section, contact details and examples of their work.
 
-![Screenshot of the project page](/images/website%20.png)
+![Screenshot of the project page](./assets/images/website%20.png)
 
 ## Installation
 
