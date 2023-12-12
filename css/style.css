@@ -21,7 +21,7 @@ p {
 .hero-banner {
   margin-bottom: 30px;
   background-color: rgb(48, 48, 116);
-  background-image: url(/./images/portfolio4.png);
+  background-image: url("../assets/images/portfolio4.png");
   height: 300px;
   width: 100%;
   background-size: cover;
@@ -159,33 +159,33 @@ p {
     500px 500px
     500px 500px;
   grid-template-areas:
-    "desks desks"
-    "couches patio"
-    "bookcases bedroom";
+    "gallery gallery"
+    "horiseon lawfirm"
+    "comingsoon1 comingsoon2";
 }
 
-#bookcases {
-  grid-area: bookcases;
-  background-image: url("/images/02-portfolio-3.jpg");
+#comingsoon1 {
+  grid-area: comingsoon1;
+  background-image: url("../assets/images/02-portfolio-3.jpg");
 }
-#bedroom {
-  grid-area: bedroom;
-  background-image: url("/images/02-portfolio-3.jpg");
-}
-
-#couches {
-  grid-area: couches;
-  background-image: url("/images/horiseon.png");
+#comingsoon2 {
+  grid-area: comingsoon2;
+  background-image: url("../assets/images/02-portfolio-3.jpg");
 }
 
-#patio {
-  grid-area: patio;
-  background-image: url("/images/lawfirm.png");
+#horiseon {
+  grid-area: horiseon;
+  background-image: url("../assets/images/horiseon.png");
 }
 
-#desks {
-  grid-area: desks;
-  background-image: url("/images/gallery.png");
+#lawfirm {
+  grid-area: lawfirm;
+  background-image: url("../assets/images/lawfirm.png");
+}
+
+#gallery {
+  grid-area: gallery;
+  background-image: url("../assets/images/gallery.png");
 }
 
 .categoryGridArea {
