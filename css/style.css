@@ -15,14 +15,6 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
 p {
   margin: 0;
 }
@@ -54,7 +46,8 @@ p {
   align-items: center;
   justify-content: space-evenly;
 }
-#navigation p {
+#navigation a {
+  font-size: 20px;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -73,7 +66,7 @@ p {
   height: 900px;
   margin-left: 40%;
 }
-#flex {
+.flex {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -99,9 +92,9 @@ p {
 .aboutme {
   margin-right: 30px;
   padding-top: 80px;
-  padding-left: 30px;
+  padding-left: 70px;
   border-right: 5px solid;
-  padding-right: 80px;
+  padding-right: 40px;
   padding-bottom: 190px;
 }
 .contact {
@@ -153,7 +146,7 @@ p {
 
 .subHeading {
   text-align: center;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--dark);
   width: 300px;
   margin: 50px auto;
 }
@@ -173,11 +166,11 @@ p {
 
 #bookcases {
   grid-area: bookcases;
-  background-image: url("/images/gallery.png");
+  background-image: url("/images/02-portfolio-3.jpg");
 }
 #bedroom {
   grid-area: bedroom;
-  background-image: url("/images/gallery.png");
+  background-image: url("/images/02-portfolio-3.jpg");
 }
 
 #couches {
@@ -187,12 +180,12 @@ p {
 
 #patio {
   grid-area: patio;
-  background-image: url("/images/gallery.png");
+  background-image: url("/images/lawfirm.png");
 }
 
 #desks {
   grid-area: desks;
-  background-image: url("/images/lawfirm.png");
+  background-image: url("/images/gallery.png");
 }
 
 .categoryGridArea {
@@ -203,13 +196,278 @@ p {
   cursor: pointer;
   display: grid;
   align-content: end;
+  border: 5px solid var(--main);
+  position: relative;
 }
 
 .heading {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
-  height: 25px;
-  color: white;
-  font-size: 18px;
-  border-bottom: 5px solid #ff6200;
+  background-color: var(--main);
+  padding: 10px;
+  height: 60px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  padding-right: 80px;
+  bottom: 50px;
+}
+.litHeading {
+  background-color: var(--main);
+  padding: 0px;
+  font-size: 15px;
+  position: absolute;
+  bottom: 45px;
+  color: black;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-content: space-between;
+}
+footer a {
+  padding-right: 200px;
+  padding-top: 40px;
+}
+.flex a {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .flex p {
+    margin: 20px;
+    margin-bottom: -25px;
+    margin-top: -10px;
+  }
+  #navigation {
+    visibility: hidden;
+  }
+  #navBar h1 {
+    font-size: 25px;
+    width: 50%;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .one {
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .footer {
+    padding: 10px;
+  }
+  #categoryGrid {
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-template-columns: 600px;
+    align-content: center;
+    grid-template-areas:
+      "desks"
+      "couches"
+      "patio"
+      "bookcases"
+      "bedroom";
+  }
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+    border: 3px solid var(--main);
+    position: relative;
+  }
+  body {
+    margin: 10px;
+    padding: 3px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .hero-banner {
+    margin-bottom: 10px;
+    background-color: rgb(48, 48, 116);
+    background-image: url(/images/portfolio4.png);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+  }
+  .subtitle {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 10px;
+  }
+  #navBar {
+    margin: 7px 2%;
+    height: 100px;
+    width: 95%;
+    display: inline-block;
+  }
+  header {
+    height: 100px;
+  }
+  .aboutme {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  p {
+    font-size: 25px;
+    padding: 5px;
+  }
+  .contact {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    justify-content: center;
+    align-content: center;
+  }
+  footer a {
+    padding-right: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .flex p {
+    margin: 20px;
+    margin-bottom: -25px;
+    margin-top: -10px;
+  }
+  #navigation {
+    visibility: hidden;
+  }
+  #navBar h1 {
+    font-size: 10px;
+    width: 50%;
+    height: 30%;
+    padding: 15px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .one {
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  .footer {
+    padding: 10px;
+  }
+  #categoryGrid {
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 300px;
+    align-content: center;
+    grid-template-areas:
+      "desks"
+      "couches"
+      "patio"
+      "bookcases"
+      "bedroom";
+  }
+  .categoryGridArea {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: grid;
+    align-content: center;
+    border: 2px solid var(--main);
+    position: relative;
+  }
+  body {
+    margin: 10px;
+    padding: 3px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    line-height: 1.5;
+  }
+  .hero-banner {
+    margin-bottom: 10px;
+    background-color: rgb(48, 48, 116);
+    background-image: url(/images/portfolio4.png);
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: right;
+  }
+  .subtitle {
+    font-size: 10px;
+    text-align: center;
+  }
+  #navBar {
+    margin: 7px 2%;
+    height: 60px;
+    width: 60%;
+    display: inline-block;
+    align-content: center;
+    position: absolute;
+    left: 18%;
+  }
+  header {
+    height: 70px;
+  }
+  .aboutme {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  p {
+    font-size: 15px;
+    padding: 5px;
+    width: 70%;
+  }
+  .contact {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: center;
+    align-content: center;
+  }
+  footer a {
+    padding-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
 }
