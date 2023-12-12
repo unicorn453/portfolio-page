@@ -98,9 +98,11 @@ p {
   padding-bottom: 190px;
 }
 .contact {
+  margin-right: 30px;
+  padding-top: 80px;
+  padding-left: 10px;
   border-right: 5px solid;
-  padding-right: 20px;
-  padding-left: 15px;
+  padding-right: 30px;
   padding-bottom: 80px;
 }
 
@@ -227,7 +229,7 @@ footer {
   align-content: space-between;
 }
 footer a {
-  padding-right: 200px;
+  padding-right: 120px;
   padding-top: 40px;
 }
 .flex a {
@@ -269,11 +271,11 @@ footer a {
     grid-template-columns: 600px;
     align-content: center;
     grid-template-areas:
-      "desks"
-      "couches"
-      "patio"
-      "bookcases"
-      "bedroom";
+      "gallery"
+      "horiseon"
+      "lawfirm"
+      "comingsoon2"
+      "comingsoon1";
   }
   .categoryGridArea {
     background-position: center;
@@ -295,7 +297,7 @@ footer a {
   .hero-banner {
     margin-bottom: 10px;
     background-color: rgb(48, 48, 116);
-    background-image: url(/images/portfolio4.png);
+    background-image: url("../assets/images/portfolio4.png");
     height: 200px;
     width: 100%;
     background-size: cover;
@@ -387,11 +389,11 @@ footer a {
     grid-template-columns: 300px;
     align-content: center;
     grid-template-areas:
-      "desks"
-      "couches"
-      "patio"
-      "bookcases"
-      "bedroom";
+      "gallery"
+      "horiseon"
+      "lawfirm"
+      "comingsoon2"
+      "comingsoon1";
   }
   .categoryGridArea {
     background-position: center;
@@ -413,7 +415,7 @@ footer a {
   .hero-banner {
     margin-bottom: 10px;
     background-color: rgb(48, 48, 116);
-    background-image: url(/images/portfolio4.png);
+    background-image: url("../assets/images/portfolio4.png");
     height: 200px;
     width: 100%;
     background-size: cover;
