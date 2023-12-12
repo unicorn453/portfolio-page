@@ -21,7 +21,7 @@ p {
 .hero-banner {
   margin-bottom: 30px;
   background-color: rgb(48, 48, 116);
-  background-image: url(/images/portfolio4.png);
+  background-image: url(/./images/portfolio4.png);
   height: 300px;
   width: 100%;
   background-size: cover;
